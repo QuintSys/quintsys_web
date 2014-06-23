@@ -14,5 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 // Loads all Bootstrap javascripts
-//= require bootstrap
+
+
+//= require bootstrap/carousel
+//= require bootstrap/collapse
+//= require bootstrap/dropdown
+//= require bootstrap/transition
+
 //= require home
