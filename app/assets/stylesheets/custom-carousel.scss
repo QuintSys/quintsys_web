@@ -1,0 +1,44 @@
+//
+// Carousel
+// --------------------------------------------------
+
+
+// Optional captions
+// -----------------------------
+// Hidden by default for smaller viewport
+.carousel-caption {
+  left: 0;
+  right: 15%;
+  bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(0,0,0,0.5);
+  text-align: left;
+}
+
+
+// Scale up controls for tablets and up
+@media screen and (min-width: $screen-sm-min) {
+
+  // Scale up the controls a smidgen
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+    font-size: 30px;
+  }
+
+  // Show and left align the captions
+  .carousel-caption {
+    left: 2%;
+    right: 2%;
+    padding: 0 10px 30px;
+  }
+
+  // Move up the indicators
+  .carousel-indicators {
+    bottom: 20px;
+  }
+}

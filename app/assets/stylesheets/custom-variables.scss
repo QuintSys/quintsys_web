@@ -1,0 +1,29 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Brand colors
+// -------------------------
+
+$brand-primary:         #FFFFFF;
+$brand-success:         #5cb85c;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
+$brand-error:           #b94a48;
+$brand-info:            #5bc0de;
+
+// Global values
+// --------------------------------------------------
+$blue:              #049cdb;
+
+
+// Scaffolding
+// -------------------------
+$body-bg:               $blue;
+$text-color:            #fff;
+
+// Links
+// -------------------------
+
+$link-color:            $brand-primary;
+$link-hover-color:      darken($link-color, 15%);

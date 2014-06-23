@@ -1,5 +1,6 @@
 // Core variables and mixins
 @import 'bootstrap/variables';
+@import 'custom-variables';
 @import 'bootstrap/mixins';
 
 // Reset and dependencies
@@ -9,6 +10,7 @@
 
 // Core CSS
 @import 'bootstrap/scaffolding';
+@import 'custom-scaffolding';
 @import 'bootstrap/type';
 @import 'bootstrap/code';
 @import 'bootstrap/grid';
@@ -44,7 +46,10 @@
 @import 'bootstrap/tooltip';
 @import 'bootstrap/popovers';
 @import 'bootstrap/carousel';
+@import 'custom-carousel';
 
 // Utility classes
 @import 'bootstrap/utilities';
 @import 'bootstrap/responsive-utilities';
+
+@import 'custom';
