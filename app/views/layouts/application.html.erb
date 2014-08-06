@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>QuintsysWeb</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= content_for?(:page_title) ? yield(:page_title) : 'Web and Database Applications Development' %> - Quintero
+    Systems, Inc.</title>
+  <meta name="description" content="<%= content_for?(:page_description) ? yield(:page_description) : 'Web & Database applications development. Online and data driven applications, secure and performant; custom made to meet your specifications.' %>">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= render 'shared/analytics' %>
 </head>
-<body>
-
-<%= yield %>
-
+<body data-grid-framework="b3" data-grid-color="gray" data-grid-opacity="0.5" data-grid-zindex="10" data-grid-gutterwidth="30px" data-grid-nbcols="16">
+<header class="header">
+  <%= render '/shared/header' %>
+</header>
+<main class="main container" role="main">
+  <%= render 'shared/messages' %>
+  <%= content_for?(:content) ? yield(:content) : yield %>
+</main>
+<footer class="footer">
+  <%= render 'shared/footer' %>
+</footer>
+<%= debug(params) if Rails.env.development? %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<%= yield :javascripts %>
 </body>
 </html>
