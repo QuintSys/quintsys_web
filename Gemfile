@@ -5,8 +5,7 @@ gem 'rails', '4.1.1'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.1.1'
-# gem 'bcrypt', '~> 3.1.7'
-# gem 'jbuilder', '~> 2.0'
+
 
 group :assets do
   gem 'coffee-rails', '~> 4.0.0'
@@ -14,7 +13,10 @@ group :assets do
   gem 'sass-rails', '~> 4.0.3'
 end
 
-gem 'debugger', group: [:development, :test]
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'debugger'
+end
 
 group :development do
   gem 'spring'
@@ -23,6 +25,11 @@ end
 group :production do
   gem 'rails_12factor'
   # gem 'unicorn'
+end
+
+group :test do
+  gem 'rake'
+
 end
 
 group :doc do
