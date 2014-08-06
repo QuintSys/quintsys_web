@@ -1,12 +1,18 @@
 language: ruby
-rvm:
-  - 2.1.1
-  - 2.0.0
-  - 1.9.3
-  - 1.9.2
-  - ruby-head
-  - jruby-18mode # JRuby in 1.8 mode
-  - jruby-19mode # JRuby in 1.9 mode
-  - jruby-head
-  - rbx-2.1.1
 cache: bundler
+bundler_args: --without development
+rvm:
+  - ruby-head
+  - ruby
+  - 2.1.1
+  - jruby-head
+  - jruby
+  - rbx-head
+matrix:
+  fast_finish: true
+  allow_failures:
+    - rvm: ruby-head
+    - rvm: ruby
+    - rvm: jruby-head
+    - rvm: jruby
+    - rvm: rbx-head
