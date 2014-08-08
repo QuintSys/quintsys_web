@@ -33,5 +33,6 @@ module QuintsysWeb
       c.integration_tool :rspec
       c.performance_tool :rspec
     end
+
   end
 end

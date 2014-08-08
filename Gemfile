@@ -5,7 +5,7 @@ gem 'rails', '4.1.1'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.1.1'
-
+gem 'rack-cors', :require => 'rack/cors'
 
 group :assets do
   gem 'coffee-rails', '~> 4.0.0'
