@@ -34,5 +34,6 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'heroku_rails_deflate'
   # gem 'unicorn'
 end
