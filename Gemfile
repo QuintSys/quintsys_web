@@ -13,23 +13,17 @@ group :assets do
   gem 'sass-rails', '~> 4.0.3'
 end
 
-group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0'
-  gem 'debugger'
-end
-
 group :development do
   gem 'spring'
 end
 
-group :production do
-  gem 'rails_12factor'
-  # gem 'unicorn'
-end
-
 group :test do
   gem 'rake'
+end
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'debugger'
 end
 
 group :doc do
@@ -38,3 +32,7 @@ group :doc do
   gem 'sdoc', '~> 0.4.0', group: :doc
 end
 
+group :production do
+  gem 'rails_12factor'
+  # gem 'unicorn'
+end
