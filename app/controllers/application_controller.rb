@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
     @iron_cache = iron_cache_client.cache('my_cache')
   end
 
+  private
   def iron_cache_client
     @iron_cache_client ||= IronCache::Client.new
   end
