@@ -6,6 +6,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'iron_cache_rails'
 
 group :assets do
   gem 'coffee-rails', '~> 4.0.0'
@@ -24,6 +25,7 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
   gem 'debugger'
+  gem 'quiet_assets'
 end
 
 group :doc do

@@ -8,4 +8,12 @@ class ApplicationController < ActionController::Base
   def set_cache_expires
     expires_in 365.days, :public => true
   end
+
+  def iron_cache
+    @iron_cache = iron_cache_client.cache('my_cache')
+  end
+
+  def iron_cache_client
+    @iron_cache_client ||= IronCache::Client.new
+  end
 end

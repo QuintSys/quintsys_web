@@ -1,0 +1,1 @@
+QuintsysWeb::Application.config.cache_store = :iron_cache_store
