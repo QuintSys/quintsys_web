@@ -3,6 +3,6 @@ cache: bundler
 sudo: false
 bundler_args: --without development
 rvm:
-  - 2.1.1
+  - 2.2.3
 matrix:
   fast_finish: true
