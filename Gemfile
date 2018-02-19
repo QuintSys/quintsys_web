@@ -23,7 +23,7 @@ group :test do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0'
+  gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
   gem 'byebug'
   gem 'quiet_assets'
 end
